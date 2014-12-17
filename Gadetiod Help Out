@@ -1,0 +1,29 @@
+###BIG THANKS TO PHIL FOR SHARING HIS IDEAS, HELP AND CODE###
+#unicorn.set_pixel(x, y, red, blue, green)
+#unicorn.show
+#unicorn.clear
+
+import unicornhat as UH
+import time, colorsys
+
+
+sentance =  raw_input("Please enter your phrase").lower()
+
+for letter in sentance:
+    index  = ord(letter)-65
+    print index
+    if index > 0:
+        x = int(index/8.0)
+        print x
+        x = x - 4
+        y = int(index%8)
+        print (x, y)
+
+        UH.clear
+        UH.brightness(0.1)
+        UH.set_pixel(y, x, 0, 255, 0)
+        UH.show()
+        time.sleep(0.05)
+        UH.clear()
+    
+
