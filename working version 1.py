@@ -17,7 +17,7 @@ def random_sparkle(): ### Code for a random LED if the letter value is below zer
         time.sleep(0.10)
         UH.clear()
 
-website = urllib2.urlopen("http://www.thirskschool.org")
+website = urllib2.urlopen("enter address here")
 ##print website.read()
 
 sentence = website.read()
